@@ -158,7 +158,7 @@ body {
 /* Footer */
 
 /* Res for android */
-@media (min-width: 0px) and (max-width: 991.98px) {
+@media (min-width: 0px) and (max-width: 1080px) {
   .banner {
     background-image: url(asset/bg-banner-andro.jpg);
     background-size: cover;
@@ -178,5 +178,21 @@ body {
   }
   #gallery .container .card-3 iframe {
     width: auto;
+  }
+  /* font */
+  .navbar a .brand {
+    font-family: 'VALORANT', sans-serif;
+  }
+  #about h1 {
+    font-family: 'VALORANT', sans-serif;
+  }
+  #gallery .container h1 {
+    font-family: 'VALORANT', sans-serif;
+  }
+  .send-email h1 {
+    font-family: 'VALORANT', sans-serif;
+  }
+  #footer h2 {
+    font-family: 'VALORANT', sans-serif;
   }
 }
