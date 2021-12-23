@@ -179,20 +179,4 @@ body {
   #gallery .container .card-3 iframe {
     width: auto;
   }
-  /* font */
-  .navbar a .brand {
-    font-family: 'VALORANT', sans-serif;
-  }
-  #about h1 {
-    font-family: 'VALORANT', sans-serif;
-  }
-  #gallery .container h1 {
-    font-family: 'VALORANT', sans-serif;
-  }
-  .send-email h1 {
-    font-family: 'VALORANT', sans-serif;
-  }
-  #footer h2 {
-    font-family: 'VALORANT', sans-serif;
-  }
 }
