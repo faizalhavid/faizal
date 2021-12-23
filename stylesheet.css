@@ -158,7 +158,7 @@ body {
 /* Footer */
 
 /* Res for android */
-@media (min-width: 500px) and (max-width: 991.98px) {
+@media (min-width: 0px) and (max-width: 991.98px) {
   .banner {
     background-image: url(asset/bg-banner-andro.jpg);
     background-size: cover;
