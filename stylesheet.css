@@ -9,8 +9,6 @@ body {
 }
 /* Navbar */
 .navbar ul li {
-  list-style: none;
-  display: inline-block;
   margin: 0 20px;
   position: relative;
 }
@@ -51,7 +49,7 @@ body {
 .banner {
   background-image: url(asset/bg-banner.jpg);
   background-size: cover;
-  height: 780px;
+  height: 785px;
   margin-top: -85px;
 }
 .banner .caption {
@@ -76,6 +74,18 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+#about .about-caption {
+  padding-bottom: 16px;
+}
+.cv {
+  color: #ece8e1;
+  background-color: #ff4655;
+}
+.cv:hover {
+  color: #ece8e1;
+  background-color: #0f1923;
+}
+
 /* Gallery */
 
 #gallery .container .gallery-caption {
@@ -104,6 +114,140 @@ body {
   background-color: #0f1923;
   box-shadow: #ece8e1 0px 0px 10px;
 }
+/* skill */
+#skill {
+  background-color: #0f1923;
+  padding: 75px 80px;
+}
+
+.skill-text {
+  text-align: center;
+  font-family: 'VALORANT', sans-serif;
+  color: #ece8e1;
+  margin-bottom: 24px;
+}
+.skill-bar {
+  width: 600px;
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 5px 5px 10px rgb(122, 122, 122);
+  background-color: #ffff;
+}
+.skill-bar .bar .info {
+  text-align: left;
+  margin-bottom: 5px;
+}
+.skill-bar .bar {
+  margin: 20px 0;
+}
+.skill-bar .bar:first-child {
+  margin-top: 0px;
+}
+.skill-bar .bar .info span {
+  font-size: 17px;
+  font-weight: 500;
+}
+.skill-bar .bar .proges-line {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background: #d0bcf5;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 6s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.proges-line span {
+  left: 0px;
+  height: 100%;
+  width: 80%;
+  background: #a884ed;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 8s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.proges-line.corel span {
+  width: 90%;
+}
+.proges-line.photo span {
+  width: 65%;
+}
+.proges-line.fiqma span {
+  width: 60%;
+}
+.proges-line.premiere span {
+  width: 75%;
+}
+.proges-line.html span {
+  width: 50%;
+}
+.proges-line.mit span {
+  width: 45%;
+}
+.proges-line.bahasa-c span {
+  width: 25%;
+}
+.skill-bar .bar .proges-line span::before {
+  position: absolute;
+  content: ' ';
+  right: 0;
+  top: -10px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+}
+.skill-bar .bar .proges-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  background: #474342;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+.proges-line.corel span::after {
+  content: '90%';
+}
+.proges-line.photo span::after {
+  content: '65%';
+}
+.proges-line.fiqma span::after {
+  content: '60%';
+}
+.proges-line.premiere span::after {
+  content: '75%';
+}
+.proges-line.af-ef span::after {
+  content: '70%';
+}
+.proges-line.html span::after {
+  content: '50%';
+}
+.proges-line.mit span::after {
+  content: '45%';
+}
+.proges-line.bahasa-c span::after {
+  content: '25%';
+}
+#galery {
+  margin: 25px;
+}
+table {
+  margin: 0 auto;
+}
 /* send email */
 .send-email {
   padding: 25px;
@@ -113,6 +257,14 @@ body {
   font-family: 'VALORANT', sans-serif;
   color: #0f1923;
   border-bottom: 1px solid #0f1923;
+}
+.send-email button {
+  color: #ece8e1;
+  background-color: #ff4655;
+}
+.send-email button:hover {
+  color: #ece8e1;
+  background-color: #0f1923;
 }
 
 /* Footer */
@@ -158,7 +310,12 @@ body {
 /* Footer */
 
 /* Res for android */
-@media (min-width: 0px) and (max-width: 1080px) {
+@media (min-width: 0px) and (max-width: 780px) {
+  /* navbar */
+  .navbar a .brand {
+    font-size: 16px;
+  }
+  /* banner */
   .banner {
     background-image: url(asset/bg-banner-andro.jpg);
     background-size: cover;
@@ -172,11 +329,29 @@ body {
   .banner .caption p {
     font-size: 15px;
   }
-
+  /* about */
+  #about p {
+    font-size: 12px;
+  }
+  #about h1 {
+    font-size: 35px;
+  }
+  /* gallery */
   #gallery .container .card-3 {
     width: 210px;
   }
   #gallery .container .card-3 iframe {
     width: auto;
+  }
+  /* skill */
+  .skill-bar .bar .info span {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .sk-1 {
+    margin-bottom: 24px;
+  }
+  .skill-bar {
+    width: 300px;
   }
 }
