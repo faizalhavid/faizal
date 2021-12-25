@@ -24,19 +24,13 @@
   <!-- Valorant -->
   <link href="http://fonts.cdnfonts.com/css/valorant" rel="stylesheet">
 
-  <!-- Identitas title Web  --> 
+  <!-- Identitas title Web  -->
   <title>Faizal Portofolio</title>
   <link rel="icon" href="asset/icon.png" />
- 
+
 
 
   <script>
-    // durasi slider
-    $(function () {
-      $('.carousel').carousel({
-        interval: 1000
-      });
-    });
     //  button more
     $(document).ready(function () {
       $('.more').click(function () {
@@ -65,10 +59,10 @@
   </script>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark" style="height:60px;">
+  <nav class="navbar navbar-expand-lg navbar-dark" id="home" style="height:60px;">
     <div class="container">
       <a class="navbar-brand fw-border" href="main.html">
-        <img class="pe-2" src="asset/icon.svg" width="50px" alt="icon.png" />
+        <img class="pe-2" src="asset/icon.png" width="50px" alt="icon.png" />
         <span class="brand">Faizal Portofolio </span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -78,7 +72,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About me</a>
@@ -87,7 +81,7 @@
             <a class="nav-link" href="#gallery">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#send">Send mail</a>
+            <a class="nav-link" href="#skill">Skill</a>
           </li>
         </ul>
       </div>
@@ -103,21 +97,26 @@
         and those who matter don't mind.”<br>
         <span style="font-size: 20px;"> (Bernard M. Baruch)</span></p>
     </div>
-
   </div>
   <!-- Jumbotron banner -->
 
-  <!-- Jumbotron about me -->
+  <!-- about me -->
   <section id="about">
     <div class="container">
       <div class="row align-items-start">
-        <div class="col-md-6 col-sm-1" style="color:#0f1923">
+        <div class="col-sm-1 col-md-6 about-caption" style="color:#0f1923">
           <h1 class="display-4">ABOUT ME</h1>
           <p>Halo perkenalkan saya Mohamad Faizal Norhavid Mahasiswa Politeknik Elektronika Negeri Surabaya Jurusan
-            Teknik Infomatika Semester 1</p>
-          <p>Saya lahir pada tanggal 22 Juli 2002 di Ponorogo, domisili saya saat
-            di Ponorogo dan hobi saya bermain game, membuat desain dan editing video
+            Teknik Infomatika Semester 1.</p>
+          <p>Saya lahir pada tanggal 22
+            Juli 2002 di Ponorogo, domisili saya saat
+            di Ponorogo dan hobi saya bermain game, membuat desain dan editing video.
           </p>
+          <div id="cv">
+            <a href="https://drive.google.com/file/d/1Y-GRncGEEXl3kIh_N5ALcTj5G3Yf1JoI/view?usp=sharing">
+              <button class="btn cv">Curiculumn Vitae</button>
+            </a>
+          </div>
         </div>
         <div class="col-md-6 col-sm-1">
           <!-- img slider -->
@@ -151,7 +150,7 @@
         </div>
       </div>
   </section>
-  <!-- Jumbotron about me -->
+  <!--  about me -->
 
   <!--Gallery  -->
   <div id="gallery" style="padding-bottom:45px;background-color: #ff4655;">
@@ -310,8 +309,77 @@
 
   </div>
   <!-- Gallery -->
+  <!-- skill -->
+  <div id="skill">
+    <h1 display-4 class="skill-text">SKILL</h1>
+    <div class="container-fluid">
+      <div class="row align-items-start">
+        <div class="col-sm-1 col-md-6 sk-1">
+          <div class="skill-bar sk1">
+            <div class="bar">
+              <div class="info">
+                <span>Corel Draw</span>
+              </div>
+              <div class="proges-line corel"><span></span></div>
+            </div>
 
+            <div class="bar">
+              <div class="info">
+                <span>Photoshop</span>
+              </div>
+              <div class="proges-line photo"><span></span></div>
+            </div>
 
+            <div class="bar">
+              <div class="info">
+                <span>Fiqma</span>
+              </div>
+              <div class="proges-line fiqma"><span></span></div>
+            </div>
+
+            <div class="bar">
+              <div class="info">
+                <span>Adobe Premiere</span>
+              </div>
+              <div class="proges-line premiere"><span></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-1 col-md-6 sk-1">
+          <div class="skill-bar sk2">
+            <div class="bar">
+              <div class="info">
+                <span>Adobe After Effect</span>
+              </div>
+              <div class="proges-line af-ef"><span></span></div>
+            </div>
+
+            <div class="bar">
+              <div class="info">
+                <span>HTML CSS</span>
+              </div>
+              <div class="proges-line html"><span></span></div>
+            </div>
+
+            <div class="bar">
+              <div class="info">
+                <span>Mit App</span>
+              </div>
+              <div class="proges-line mit"><span></span></div>
+            </div>
+
+            <div class="bar">
+              <div class="info">
+                <span>C</span>
+              </div>
+              <div class="proges-line bahasa-c"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- akhir skill -->
 
   <!-- send email -->
   <div class="container send-email" id="send">
@@ -319,15 +387,14 @@
       <h1 class="display-4 text-center">Send Email</h1>
       <div class="mb-3">
         <label for="email" class="form-label">Email address :</label>
-        <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com">
+        <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com" required>
       </div>
       <div class="mb-3">
         <label for="komentar" class="form-label">Message :</label>
-        <textarea class="form-control" id="komentar" placeholder="masukan pesan ..." rows="8"></textarea>
+        <textarea class="form-control" id="komentar" placeholder="masukan pesan ..." rows="8" required></textarea>
       </div>
-      <button type="submit" class="btn" style="color: #ffff;background-color: #ff4655;">Send</button>
+      <button type="submit" class="btn">Send</button>
     </form>
-
   </div>
 
   <!-- send email -->
